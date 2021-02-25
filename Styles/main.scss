@@ -1,0 +1,43 @@
+.main {
+    background: tan;
+
+    h4 {
+      display: none;
+    }
+    @include flex (space-between, center);
+
+    h1 {
+      color: #ddd;
+    
+      &:hover {
+        text-decoration: underline;
+        @extend %center;
+      }
+    }
+
+    h2 {
+      background-color: $brown1;
+    }
+    h3 {
+      color: $brown1;
+    }
+  }
+  
+
+  .minor {
+    background: silver;
+
+    h1 {
+      text-decoration: underline;
+    
+      @extend %center;
+    
+      margin-bottom: 25px * 4;
+    }
+    h2 {
+      text-decoration: line-through;
+      @extend %center;
+    }
+  }
+  
+  
